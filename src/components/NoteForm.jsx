@@ -6,8 +6,8 @@ import TextInput from './inputs/TextInput';
 const NoteForm = ({ notes, setNotes }) => {
   const [formData, setFormData] = useState({
     title: '',
-    priority: 'Medium',
-    category: 'Work',
+    priority: '🟠 Medium',
+    category: '📂 Work',
     description: '',
   });
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -25,8 +25,8 @@ const NoteForm = ({ notes, setNotes }) => {
     setNotes([newNote, ...notes]);
     setFormData({
       title: '',
-      priority: 'Medium',
-      category: 'Work',
+      priority: '🟠 Medium',
+      category: '📂 Work',
       description: '',
     });
   };
